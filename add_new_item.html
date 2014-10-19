@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- fail to spit to two areas, don't why, discuss -->
+<html>
+<head>
+  <title>Your Application: Second Screen</title>
+
+  <!-- Adds Bootswatch CSS  -->
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/paper/bootstrap.min.css">
+
+  <!-- Adds Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <!-- Adds your custom styles -->
+
+  <link rel="stylesheet" type="text/css" href="my_styles.css">
+
+  <!-- Adds Bootstrap Javascript -->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+ <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Website pic</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="\user">User_name</a></li>
+        <li><a href="XXXXX">Signed Out</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="alert alert-dismissable alert-success">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+      <!-- direct to the list page -->
+    </button>
+    <p>This item belongs to list_(link to the name of the list). If not, please click here.</p>
+  </div>
+  <div class="row">
+   <div class="col-md-5,col-md-offset-1" class="form-group">
+    <!-- This is the area to show picture -->
+    <label for="exampleInputFile">Browse My Computer</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Please only submit jpeg format.</p>
+    <!-- need to discuss here -->
+  </div>
+  <div class="col-md-5,col-md-offset-1">
+   <form role="form">
+    <div class="form-group">
+      <label for="new_item_name">"I want"</label>
+      <!-- override, change "I want" to Italic font -->
+      <input type="name" class="form-control" id="new_item_name" placeholder='For example: "A Tale of Two Cities"'>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Hou Much I Want</label>
+      <div class="rating">
+        <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
+        <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
+        <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
+        <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
+        <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
+      </div>
+      <!-- replace by a five-star rating system, like iTunes -->
+    </div>
+    <div class="form-group">
+      <label for="new_item_description">Description</label>
+      <input type="text" class="form-control" id="new_item_description" placeholder='Color, size, quantity, etc."'>
+    </div>
+    <button type="button" class="btn btn-primary">Add</button>
+    <button href="www.google.com" type="button" class="btn btn-primary">Cancel</button>
+  </form>
+</div>
+</div>
+</div>
+
+</body>
+</html>
