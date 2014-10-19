@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!-- This page is now only for signed user only. If the user has not signed in yet, some places need to be changed.
+1. No "Add a new item" button
+2. no "edit" or "delete" button
+3. But the visitor has "claim" button
+4. If an item has been claimed, the "delete" button should be disabled -->
 <html>
 <head>
   <title>Your Application: First Screen</title>
@@ -39,6 +44,107 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<div class="jumbotron">
+  <h1>Link to list name</h1>
+  <p>what the users wants to say about this list. like I said yes to Jack's proposal. In two months, you will call me Mrs. Smith</p>
+  <p><a class="btn btn-primary btn-lg">Add a new item</a></p>
+</div>
+<div class="container">
+  <table class="table table-hover ">
+<!--   <thead>
+    <tr>
+      <th>#</th>
+      <th>Column heading</th>
+      <th>Column heading</th>
+      <th>Column heading</th>
+      <th>Column heading</th>
+      <th>Column heading</th>
+    </tr>
+  </thead> -->
+  <tbody>
+    <!-- fix the width of each column, do it later -->
+    <tr>
+      <td>1</td>
+      <td>All these should be linked to the detail page</td>
+      <td>the number of rows is automatic as well</td>
+      <td>pic be thumbsize?</td>
+      <td>taken or not</td>
+      <td>
+      <a href="#" class="btn btn-primary">Edit</a>
+      <!-- change the Edit button to the same width as Delete button -->
+      </td>
+      <td>
+        <a href="#" class="btn btn-default">Delete</a>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>North Face Backpack</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>taken</td>
+      <td>
+        <a href="#" class="btn btn-primary">Edit</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-default">Delete</a>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>item name</td>
+      <td>rating system</td>
+      <td>picture</td>
+      <td>taken</td>
+      <td>
+        <a href="#" class="btn btn-primary">Edit</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-default">Delete</a>
+      </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>taken</td>
+      <td>
+        <a href="#" class="btn btn-primary">Edit</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-default">Delete</a>
+      </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>taken</td>
+      <td>
+        <a href="#" class="btn btn-primary">Edit</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-default">Delete</a>
+      </td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>Column content</td>
+      <td>taken</td>
+      <td>
+        <a href="#" class="btn btn-primary">Edit</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-default">Delete</a>
+      </td>
+    </tr>
 
+  </tbody>
+</table>
+</div>
 </body>
 </html>
